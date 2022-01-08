@@ -1,36 +1,28 @@
 {
-  "name": "payment-cycles-server",
+  "name": "my-money-backend",
   "version": "1.0.0",
   "description": "",
   "main": "src/loader.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon",
-    "prod": "pm2 start src/loader.js --name my-money-backend"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ViniciusAlcantara/payment-cycles-server.git"
+    "production": "pm2 start src/loader.js --name my-money-backend"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ViniciusAlcantara/payment-cycles-server/issues"
-  },
-  "homepage": "https://github.com/ViniciusAlcantara/payment-cycles-server#readme",
   "dependencies": {
-    "body-parser": "^1.19.1",
-    "cors": "^2.8.5",
-    "express": "^4.17.2",
-    "express-query-int": "^3.0.0",
-    "lodash": "^4.17.21",
-    "mongoose": "^4.13.21",
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "express-query-int": "^1.0.1",
+    "jsonwebtoken": "^7.3.0",
+    "lodash": "^4.17.4",
+    "mongoose": "^4.7.0",
     "mongoose-paginate": "^5.0.3",
-    "node-restful": "^0.2.6",
-    "pm2": "^5.1.2"
+    "node-restful": "^0.2.5",
+    "pm2": "^2.1.5"
   },
   "devDependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^1.11.0"
   }
 }
